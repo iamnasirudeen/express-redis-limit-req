@@ -1,0 +1,25 @@
+{
+  "name": "@username/express-redis-rate-limiter",
+  "version": "1.0.0",
+  "description": "Basic rate-limiting middleware for Express. Use to limit repeated requests to public APIs and/or endpoints.",
+  "main": "rateLimiter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamnasirudeen/express-redis-rate-limit.git"
+  },
+  "keywords": [
+    "rateLimiter",
+    "express",
+    "redis",
+    "express-redis-rate-limit"
+  ],
+  "author": "Olohundare Nasirudeen <naskkographics@gmail.com> (https://github.com/iamnasirudeen/express-redis-rate-limit)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamnasirudeen/express-redis-rate-limit/issues"
+  },
+  "homepage": "https://github.com/iamnasirudeen/express-redis-rate-limit#readme"
+}
