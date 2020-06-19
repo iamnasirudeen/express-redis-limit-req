@@ -8,20 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamnasirudeen/express-redis-rate-limit.git"
+    "url": "git+https://github.com/iamnasirudeen/express-redis-limit-req.git"
   },
   "keywords": [
     "rateLimiter",
     "express",
     "redis",
-    "express-redis-rate-limit"
+    "express-redis-limit-req"
   ],
-  "author": "Olohundare Nasirudeen <naskkographics@gmail.com> (https://github.com/iamnasirudeen/express-redis-rate-limit)",
+  "author": "Olohundare Nasirudeen <naskkographics@gmail.com> (https://github.com/iamnasirudeen/express-redis-limit-req)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iamnasirudeen/express-redis-rate-limit/issues"
+    "url": "https://github.com/iamnasirudeen/express-redis-limit-req/issues"
   },
-  "homepage": "https://github.com/iamnasirudeen/express-redis-rate-limit#readme",
+  "homepage": "https://github.com/iamnasirudeen/express-redis-limit-req#readme",
   "dependencies": {
     "redis": "^3.0.2"
   },
