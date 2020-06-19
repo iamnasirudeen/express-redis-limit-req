@@ -1,0 +1,63 @@
+Arguments: 
+  /root/.nvm/versions/node/v14.4.0/bin/node /mnt/c/Program Files (x86)/Yarn/bin/yarn.js publish
+
+PATH: 
+  /root/.nvm/versions/node/v14.4.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/Users/DELL/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/DELL/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/DELL/AppData/Roaming/npm:/mnt/c/Program Files/heroku/bin:/mnt/c/Users/DELL/AppData/Local/Yarn/bin:/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.4.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/mnt/c/Program Files (x86)/Yarn/lib/cli.js:137008:13)
+      at Interface.emit (events.js:315:20)
+      at Interface._ttyWrite (readline.js:873:16)
+      at ReadStream.onkeypress (readline.js:213:10)
+      at ReadStream.emit (events.js:315:20)
+      at emitKeys (internal/readline/utils.js:335:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1140:36)
+      at ReadStream.emit (events.js:315:20)
+      at addChunk (_stream_readable.js:302:12)
+
+npm manifest: 
+  {
+    "name": "@username/express-redis-rate-limiter",
+    "version": "1.0.0",
+    "description": "Basic rate-limiting middleware for Express. Use to limit repeated requests to public APIs and/or endpoints.",
+    "main": "rateLimiter.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/iamnasirudeen/express-redis-rate-limit.git"
+    },
+    "keywords": [
+      "rateLimiter",
+      "express",
+      "redis",
+      "express-redis-rate-limit"
+    ],
+    "author": "Olohundare Nasirudeen <naskkographics@gmail.com> (https://github.com/iamnasirudeen/express-redis-rate-limit)",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/iamnasirudeen/express-redis-rate-limit/issues"
+    },
+    "homepage": "https://github.com/iamnasirudeen/express-redis-rate-limit#readme",
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com/"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
