@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/iamnasirudeen/express-redis-rate-limit/issues"
   },
-  "homepage": "https://github.com/iamnasirudeen/express-redis-rate-limit#readme"
+  "homepage": "https://github.com/iamnasirudeen/express-redis-rate-limit#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
