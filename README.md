@@ -5,13 +5,13 @@ Basic rate-limiting middleware for Express. Use to limit repeated requests to pu
 # Installation
 
 ```
-$ npm install express-redis-rate-limit
+$ npm install express-redis-limit-req
 ```
 
 # Usage
 
 ```
-const RateLimit = require("express-redis-rate-limit");
+const RateLimit = require("express-redis-limit-req");
 const limiter = RateLimit({
   redisURL: "redis://127.0.0.1:6379", // redis connection url
   expiration: 3600, // 1 hour

@@ -1,5 +1,5 @@
 {
-  "name": "@username/express-redis-rate-limiter",
+  "name": "express-redis-limit-req",
   "version": "1.0.0",
   "description": "Basic rate-limiting middleware for Express. Use to limit repeated requests to public APIs and/or endpoints.",
   "main": "rateLimiter.js",
@@ -25,7 +25,5 @@
   "dependencies": {
     "redis": "^3.0.2"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "devDependencies": {}
 }
