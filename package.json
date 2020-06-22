@@ -1,6 +1,6 @@
 {
   "name": "express-redis-limit-req",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Basic rate-limiting middleware for Express. Use to limit repeated requests to public APIs and/or endpoints.",
   "main": "rateLimiter.js",
   "scripts": {
