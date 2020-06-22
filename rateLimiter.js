@@ -14,19 +14,24 @@ function apiLimiter(config) {
       max,
       message,
       statusCode,
-      whiteList = [],
+      whiteList,
     } = config;
 
     // Make sure max is an Integer
     if (typeof max !== "number") throw new Error("Max has to be in Integer");
 
     // Make sure redisURL was specified
-    if (typeof redisURL == undefined)
+    if (typeof redisURL == "undefined")
       throw new Error("redisURL was not specified");
 
     // Make sure expiration is an integer
     if (typeof expiration !== "number")
       throw new Error("Expiration has to be an Integer");
+
+    // Make sure whiteList is an array if defined
+    if (typeof whiteList !== "undefined" && !Array.isArray(whiteList)) {
+      throw new Error("WhiteList has to be an Array");
+    }
 
     // Connect to redis client
     const client = redis.createClient(redisURL);
