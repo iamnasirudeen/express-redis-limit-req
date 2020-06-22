@@ -8,7 +8,14 @@ function apiLimiter(config) {
       req.socket.remoteAddress ||
       (req.connection.socket ? req.connection.socket.remoteAddress : null);
 
-    const { redisURL, expiration, max, message, statusCode } = config;
+    const {
+      redisURL,
+      expiration,
+      max,
+      message,
+      statusCode,
+      whiteList = [],
+    } = config;
 
     // Make sure max is an Integer
     if (typeof max !== "number") throw new Error("Max has to be in Integer");
@@ -27,6 +34,11 @@ function apiLimiter(config) {
     if (req) {
       client.get(ipAdrress, (err, redisCount) => {
         if (err) return next(er);
+
+        // check if whitelist has an IP address in it
+        if (Array.isArray(whiteList) && whiteList.length > 0) {
+          if (whiteList.indexOf(ipAdrress) > -1) return next();
+        }
 
         // convert redisCount from string to an integer
         let requestAmount = parseInt(redisCount);
