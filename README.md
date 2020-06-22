@@ -1,6 +1,6 @@
 # Express Redis Rate Limit
 
-Basic rate-limiting middleware for Express. Use to limit repeated requests to public APIs and/or endpoints.
+Basic rate-limiting middleware for Express using Redis. Use to limit repeated requests to public APIs and/or endpoints.
 
 # Installation
 
